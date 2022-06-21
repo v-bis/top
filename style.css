@@ -83,6 +83,7 @@ h1 {
   width: auto;
   height: 350px;
   padding: 1px;
+  content-visibility: auto;
 }
 
 .projects-enter {
