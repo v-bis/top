@@ -8,12 +8,12 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-scrollto"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
 <body>
     <div id="app">
         <a href="#" v-scroll-to="'#bottom'" class="return-bottom"><i class="fas fa-angle-double-down"></i></a>
@@ -67,7 +67,7 @@
             <div class="project" v-if="memberFilter === project.category || memberFilter === 'BiS'"
                 v-bind:key="project.title" v-for="project in projects">
                 <div class="project-image-wrapper">
-                    <img class="project-image" v-bind:src="project.image">
+                    <img class="project-image lazyload"v-bind:src="project.image" loading="lazy"> 
                     <div class="gradient-overlay"></div>
                 </div>
             </div>

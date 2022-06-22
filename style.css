@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
@@ -10,13 +10,12 @@ h1 {
 
 .title {
   text-align: center;
-  border-bottom: green 2px dotted;
+  background-color: #3FB983;
 }
 
 .title img {
-  width: 200px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  width: 120px;
+  padding-top: 7px;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
 }
@@ -82,8 +81,9 @@ h1 {
 .project-image-wrapper img {
   width: auto;
   height: 350px;
-  padding: 1px;
-  content-visibility: auto;
+  padding: 3px;
+  border-radius: 10px;
+  margin-bottom: -5px;
 }
 
 .projects-enter {
@@ -101,11 +101,6 @@ h1 {
 .projects-leave-active {
   position: absolute;
   z-index: -1;
-}
-
-.member:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .members {
@@ -133,6 +128,11 @@ h1 {
   transition: all 0.2s;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.members .member:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .members .bis {
@@ -303,6 +303,7 @@ h1 {
 }
 
 footer {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,7 +384,8 @@ footer .link .fa-github {
 
 @media screen and (max-width: 500px) {
   .title img {
-    width: 120px !important;
+    width: 80px !important;
+    padding-top: 9px !important;
   }
   .projects {
     width: 100% !important;
@@ -408,7 +410,8 @@ footer .link .fa-github {
 
 @media screen and (max-width: 1000px) {
   .title img {
-    width: 170px;
+    width: 80px !important;
+    padding-top: 9px !important;
   }
   .projects {
     width: 100% !important;
