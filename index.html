@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,12 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-scrollto"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
 <body>
     <div id="app">
         <a href="#" v-scroll-to="'#bottom'" class="return-bottom"><i class="fas fa-angle-double-down"></i></a>
@@ -23,7 +21,7 @@
         <div class="title-container">
             <div id="top">
                 <h1 class="title">
-                    <img src="logo.png">
+                    <a href="https://v-bis.com/"><img src="logo.png"alt="v-BiS"></a>
                     </h3>
             </div>
             <transition appear name="instagram">
@@ -45,7 +43,6 @@
                     <div class="member ito" v-bind:class="{ active: memberFilter === 'MUSENSiTEEBU' }"
                         v-on:click="setMember('MUSENSiTEEBU')">&#129429; MUSENSiTEEBU &#129429;</div>
                 </transition>
-                <!--クリックでfilterをactive-->
                 <transition appear name="menu3">
                     <div class="member chamo" v-bind:class="{ active: memberFilter === 'CHANTMONKEE' }"
                         v-on:click="setMember('CHANTMONKEE')">&#128053; CHANTMONKEE &#128053;</div>
@@ -68,7 +65,7 @@
             <div class="project" v-if="memberFilter === project.category || memberFilter === 'BiS'"
                 v-bind:key="project.title" v-for="project in projects">
                 <div class="project-image-wrapper">
-                    <img class="project-image lazyload"v-bind:src="project.image" loading="lazy"> 
+                    <img class="project-image"v-bind:src="project.image">
                     <div class="gradient-overlay"></div>
                 </div>
             </div>
@@ -81,7 +78,7 @@
         </div>
         <div class="footer-right">
         <div class="link">
-        <a target="_blank" href=""><i class="fab fa-twitter fa-xs"></i></a><a target="_blank" href="https://github.com/v-bis/top"><i class="fab fa-github fa-lg"></i></a>
+        <a target="_blank" href="https://twitter.com/2b2012b"><i class="fab fa-twitter fa-xs"></i></a><a target="_blank" href="https://github.com/v-bis/top"><i class="fab fa-github fa-lg"></i></a>
         </div>
         <div class="footer-copy">
         ©2022 v-BiS
@@ -119,5 +116,4 @@
         })
     </script>
 </body>
-
 </html>
