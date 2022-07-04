@@ -449,7 +449,7 @@ footer .link .fa-github {
 
 @media screen and (max-width: 500px) {
   .header-background {
-    height: 120px !important;
+    height: 160px !important;
     position: static !important;
   }
   .top img {
