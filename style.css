@@ -156,6 +156,8 @@ h1 {
 }
 
 .project-image-wrapper img {
+  content-visibility: auto;
+  contain-intrinsic-size: 350px;
   width: auto;
   height: 350px;
   padding: 3px;
