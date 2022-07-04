@@ -33,12 +33,16 @@
     <div id="app">
         <a href="#" v-scroll-to="'#bottom'" class="return-bottom"><i class="fas fa-angle-double-down"></i></a>
         <a href="#" v-scroll-to="'#top'" class="return-top"><i class="fas fa-angle-double-up"></i></a>
-
-        <div class="title-container">
-            <div id="top">
-                <h1 class="title">
-                    <a href="https://v-bis.com/"><img src="logo.png" alt="v-BiS"></a>
-                    </h3>
+        <div class="header-background" id="top">
+            <div class="top">
+                <transition appear name="logo">
+                    <img src="https://v-bis.com/logo.png">
+                </transition>
+                <div class="header-wrapper">
+                    <div class="typing">
+                        Photo Gallery for BiS
+                    </div>
+                </div>
             </div>
             <transition appear name="instagram">
                 <div id="instagram">
@@ -49,6 +53,9 @@
                         style="width:100%;border:0;overflow:hidden;"></iframe>
                 </div>
             </transition>
+        </div>
+        <div class="title-container">
+
             <div class="members">
                 <transition appear name="menu1">
                     <div class="member bis" v-bind:class="{ active: memberFilter === 'BiS' }"
