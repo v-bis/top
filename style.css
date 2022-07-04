@@ -156,8 +156,6 @@ h1 {
 }
 
 .project-image-wrapper img {
-  content-visibility: auto;
-  contain-intrinsic-size: 350px;
   width: auto;
   height: 350px;
   padding: 3px;
@@ -467,6 +465,9 @@ footer .link .fa-github {
   .project-image-wrapper img {
     width: 96% !important;
     height: auto;
+  }
+  .typing {
+    font-size: 10px !important;
   }
   .return-top {
     color: white !important;
