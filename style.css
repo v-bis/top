@@ -161,6 +161,8 @@ h1 {
   padding: 3px;
   border-radius: 10px;
   margin-bottom: -5px;
+  content-visibility: auto;
+  contain-intrinsic-size: 350px;
 }
 
 .projects-enter {
