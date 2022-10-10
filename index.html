@@ -66,10 +66,12 @@
                     <div class="member ito" v-bind:class="{ active: memberFilter === 'MUSENSiTEEBU' }"
                         v-on:click="setMember('MUSENSiTEEBU')">&#129429; MUSENSiTEEBU &#129429;</div>
                 </transition>
+                <!--
                 <transition appear name="menu3">
                     <div class="member chamo" v-bind:class="{ active: memberFilter === 'CHANTMONKEE' }"
                         v-on:click="setMember('CHANTMONKEE')">&#128053; CHANTMONKEE &#128053;</div>
                 </transition>
+                -->
                 <transition appear name="menu4">
                     <div class="member neo" v-bind:class="{ active: memberFilter === 'NEOTREES' }"
                         v-on:click="setMember('NEOTREES')">&#127794; NEOTREES &#127794;</div>
@@ -115,8 +117,8 @@
             data: {
                 memberFilter: 'BiS',//初期表示
                 projects: [
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy3.jpg", category: 'TOGGY' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy1.jpg", category: 'TOGGY' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/maruimen.jpg", category: '' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano7.jpg", category: 'NANO3' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano6.jpg", category: 'NANO3' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano5.jpg", category: 'NANO3' },
@@ -124,7 +126,6 @@
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano4.jpg", category: 'NANO3' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo2.jpg", category: 'NEOTREES' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo3.jpg", category: 'NEOTREES' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/ito2.jpg", category: 'MUSENSiTEEBU' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon3.jpg", category: 'CHANTMONKEE' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon4.jpg", category: 'CHANTMONKEE' },
                     { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano2.jpg", category: 'NANO3' },
