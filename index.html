@@ -34,15 +34,28 @@
         <a href="#" v-scroll-to="'#bottom'" class="return-bottom"><i class="fas fa-angle-double-down"></i></a>
         <a href="#" v-scroll-to="'#top'" class="return-top"><i class="fas fa-angle-double-up"></i></a>
         <div class="header-background" id="top">
-            <div class="top">
-                <transition appear name="logo">
-                    <img src="https://v-bis.com/logo.png">
-                </transition>
-                <div class="header-wrapper">
-                    <div class="typing">
-                        Photo Gallery for BiS
+            <div class="center_for_pc">
+                <div class="top">
+                    <transition appear name="logo">
+                        <img src="https://v-bis.com/logo.png">
+                    </transition>
+                    <div class="header-wrapper">
+                        <div class="typing">
+                            Photo Gallery for BiS
+                        </div>
                     </div>
                 </div>
+                <transition appear name="heading-box">
+                    <div class="heading-box">
+                        <h2>
+                            <span class="gradient-text">
+                                PHOTO<br>GALLERY<br>
+                                for<br>
+                                BiS
+                            </span>
+                        </h2>
+                    </div>
+                </transition>
             </div>
             <transition appear name="instagram">
                 <div id="instagram">
@@ -64,7 +77,7 @@
                 </transition>
                 <transition appear name="menu2">
                     <div class="member ito" v-bind:class="{ active: memberFilter === 'MUSENSiTEEBU' }"
-                        v-on:click="setMember('MUSENSiTEEBU')">&#129429; MUSENSiTEEBU &#129429;</div>
+                        v-on:click="setMember('MUSENSiTEEBU')">&#129429; iTO</div>
                 </transition>
                 <!--
                 <transition appear name="menu3">
@@ -74,15 +87,15 @@
                 -->
                 <transition appear name="menu4">
                     <div class="member neo" v-bind:class="{ active: memberFilter === 'NEOTREES' }"
-                        v-on:click="setMember('NEOTREES')">&#127794; NEOTREES &#127794;</div>
+                        v-on:click="setMember('NEOTREES')">&#127794; NEO</div>
                 </transition>
                 <transition appear name="menu5">
                     <div class="member toggy" v-bind:class="{ active: memberFilter === 'TOGGY' }"
-                        v-on:click="setMember('TOGGY')">&#128118; TOGGY &#128118;</div>
+                        v-on:click="setMember('TOGGY')">&#128118; TOGGY</div>
                 </transition>
                 <transition appear name="menu6">
                     <div class="member nano" v-bind:class="{ active: memberFilter === 'NANO3' }"
-                        v-on:click="setMember('NANO3')">&#127799; NANO3 &#127799;</div>
+                        v-on:click="setMember('NANO3')">&#127799; NANO3</div>
                 </transition>
             </div>
         </div>
@@ -103,7 +116,8 @@
         </div>
         <div class="footer-right">
             <div class="link">
-                <a target="_blank" href="https://zenn.dev/hatohato/articles/d9a4bdfcab170a"><img width="50"src="https://github.com/v-bis/top/blob/main/zenn-logo.png?raw=true"></a>
+                <a target="_blank" href="https://zenn.dev/hatohato/articles/d9a4bdfcab170a"><img width="50"
+                        src="https://github.com/v-bis/top/blob/main/zenn-logo.png?raw=true"></a>
                 <a target="_blank" href="https://github.com/v-bis/top"><i class="fab fa-github fa-lg"></i></a>
             </div>
             <div class="footer-copy">
@@ -117,23 +131,28 @@
             data: {
                 memberFilter: 'BiS',//初期表示
                 projects: [
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy3.jpg", category: 'TOGGY' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy1.jpg", category: 'TOGGY' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano7.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano6.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano5.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano3.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano4.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo2.jpg", category: 'NEOTREES' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo3.jpg", category: 'NEOTREES' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon3.jpg", category: 'CHANTMONKEE' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon4.jpg", category: 'CHANTMONKEE' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano2.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/ito1.jpg", category: 'MUSENSiTEEBU' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon1.jpg", category: 'CHANTMONKEE' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano1.jpg", category: 'NANO3' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo1.jpg", category: 'NEOTREES' },
-                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon2.jpg", category: 'CHANTMONKEE' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy6.webp", category: 'TOGGY' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo5.webp", category: 'NEOTREES' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/bis1.webp", category: 'BiS' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano10.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano9.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy5.webp", category: 'TOGGY' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo5.webp", category: 'NEOTREES' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy4.webp", category: 'TOGGY' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy3.webp", category: 'TOGGY' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy1.webp", category: 'TOGGY' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano7.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano6.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano5.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano3.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano4.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo2.webp", category: 'NEOTREES' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo3.webp", category: 'NEOTREES' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon3.webp", category: 'CHANTMONKEE' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/ito1.webp", category: 'MUSENSiTEEBU' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/nano1.webp", category: 'NANO3' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/neo1.webp", category: 'NEOTREES' },
+                    { title: "", image: "https://raw.githubusercontent.com/v-bis/top/main/mon2.webp", category: 'CHANTMONKEE' },
                 ]
             },
             methods: {
