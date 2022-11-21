@@ -79,6 +79,10 @@ h1 {
   position: fixed;
 }
 
+.top a {
+  text-decoration: none;
+}
+
 .top img {
   width: 130px;
   -webkit-filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
