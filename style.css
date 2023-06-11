@@ -12,7 +12,7 @@ h1 {
 .return-top {
   text-decoration: none;
   bottom: 10px;
-  color: black;
+  color: white;
   font-size: 40px;
   height: 50px;
   line-height: 50px;
@@ -32,7 +32,7 @@ h1 {
 .return-bottom {
   text-decoration: none;
   bottom: 10px;
-  color: black;
+  color: white;
   font-size: 40px;
   height: 50px;
   line-height: 50px;
@@ -203,17 +203,17 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  margin-top: 5px;
+  background: #011E26;
+  padding-top: 30px;
 }
 
 .project-image-wrapper img {
   width: auto;
   height: 350px;
-  padding: 3px;
   border-radius: 10px;
-  margin-bottom: -5px;
+  margin: 5px 7px;
 }
 
 .projects-enter {
@@ -250,6 +250,7 @@ h1 {
           flex-direction: column;
   right: -10px;
   top: 54px;
+  z-index: 100;
 }
 
 .members .member {
@@ -451,7 +452,6 @@ h1 {
 }
 
 footer {
-  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,6 +532,44 @@ footer .link .fa-github {
   position: relative;
 }
 
+.project-image-wrapper {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  font-size:10px;
+  bottom:10px;
+  right: 0px;
+  transform-origin: top right;
+  color: #fff;
+  padding: 5px;
+  /* margin-left: 5px; */
+  padding: 10px 5px;
+  font-weight: bold;
+  background: #40b88290;
+  font-family: monospace;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  z-index: 99;
+  opacity: 0;
+  animation: fadeIn 7s ease-in-out forwards;
+  border-radius: 15px 15px 15px 0px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header-background {
     height: 380px !important;
@@ -596,10 +634,10 @@ footer .link .fa-github {
     height: auto;
   }
   .return-top {
-    color: black;
+    color: white;
   }
   .return-bottom {
-    color: black;
+    color: white;
   }
   .footer-logo {
     margin-bottom: -10px !important;
