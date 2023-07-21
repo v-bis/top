@@ -537,24 +537,24 @@ footer .link .fa-github {
 }
 
 .image-text {
+  box-shadow: 4px 4px 11px 0px #2a2a2acf;
   position: absolute;
-  font-size:10px;
-  bottom:10px;
-  left: 0px;
+  font-size: 10px;
+  top: 0%;
+  bottom: 0%;
+  left: 5px;
   transform-origin: top right;
-  color: #fff;
+  color: rgb(255 255 255);
   padding: 5px;
   padding: 10px 5px;
   font-weight: bold;
-  background: #40b88290;
   font-family: monospace;
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: sideways;
   z-index: 99;
   opacity: 0;
-  animation: fadeIn 7s ease-in-out forwards;
-  border-radius: 15px 15px 0px 15px;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -562,10 +562,10 @@ footer .link .fa-github {
     opacity: 0;
   }
   70% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
-    opacity: 1;
+    opacity: 0.7;
   }
 }
 
