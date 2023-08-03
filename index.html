@@ -82,7 +82,7 @@
                 </transition>
                 <transition appear name="menu3">
                     <div class="member chamo" v-bind:class="{ active: memberFilter === 'CHANTMONKEE' }"
-                        v-on:click="setMember('CHANTMONKEE')">&#128053; MON CHAN</div>
+                        v-on:click="setMember('CHANTMONKEE')">&#128053; MON chan</div>
                 </transition>
                 <transition appear name="menu4">
                     <div class="member neo" v-bind:class="{ active: memberFilter === 'NEOTREES' }"
@@ -99,6 +99,18 @@
                 <transition appear name="menu7">
                     <div class="member hyuga" v-bind:class="{ active: memberFilter === 'HYUGA' }"
                         v-on:click="setMember('HYUGA')">&#x26a1; HYUGA</div>
+                </transition>
+                <transition appear name="menu8">
+                    <div class="member kure" v-bind:class="{ active: memberFilter === 'KURE' }"
+                        v-on:click="setMember('KURE')">&#x1f49b; KURE</div>
+                </transition>
+                <transition appear name="menu9">
+                    <div class="member shion" v-bind:class="{ active: memberFilter === 'SHiON' }"
+                        v-on:click="setMember('SHiON')">&#x1f004; SHiON</div>
+                </transition>
+                <transition appear name="menu10">
+                    <div class="member mugen" v-bind:class="{ active: memberFilter === 'MUGEN' }"
+                        v-on:click="setMember('MUGEN')">&#x1F408;&#x200D;&#x2B1B; MUGEN</div>
                 </transition>
             </div>
         </div>
@@ -135,52 +147,52 @@
             data: {
                 memberFilter: 'BiS',//初期表示
                 projects: [
-                { title: "", title2: "23.07.16 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy18.webp", category: '' },
-                { title: "", title2: "23.07.16 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion14.webp", category: '' },
-                { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion13.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion12.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion11.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion10.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion9.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion8.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion7.webp", category: '' },
-                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion5.webp", category: '' },
+                { title: "", title2: "23.07.16 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy18.webp", category: 'TOGGY' },
+                { title: "", title2: "23.07.16 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion14.webp", category: 'SHiON' },
+                { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion13.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion12.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion11.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion10.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion9.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion8.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion7.webp", category: 'SHiON' },
+                    { title: "", title2: "23.07.15 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/sion5.webp", category: 'SHiON' },
                     { title: "", title2: "23.07.14 TOWER RECORD KINSHICHO PARCO", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy17.webp", category: 'TOGGY' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy16.webp", category: 'TOGGY' },
-                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/kure2.webp", category: '' },
+                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/kure2.webp", category: 'KURE' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/nano20.webp", category: 'NANO3' },
-                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/kure.webp", category: '' },
+                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/kure.webp", category: 'KURE' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy15.webp", category: 'TOGGY' },
-                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/sion3.webp", category: '' },
+                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/sion3.webp", category: 'SHiON' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/nano21.webp", category: 'NANO3' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy14.webp", category: 'TOGGY' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga5.webp", category: 'HYUGA' },
                     { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy13.webp", category: 'TOGGY' },
-                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/mugen.webp", category: '' },
+                    { title: "", title2: "23.05.28 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/mugen.webp", category: 'MUGEN' },
                     { title: "", title2: "23.05.27 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy12.webp", category: 'TOGGY' },
                     { title: "", title2: "23.05.27 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/nano19.webp", category: 'NANO3' },
-                    { title: "", title2: "23.05.27 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/sion1.webp", category: '' },
-                    { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS7.webp", category: '' },
+                    { title: "", title2: "23.05.27 FUKUOKA DRUM SON", image: "https://raw.githubusercontent.com/v-bis/top/main/sion1.webp", category: 'SHiON' },
+                    { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS7.webp", category: 'BiS' },
                     { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/nano18.webp", category: 'NANO3' },
-                    { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/sion2.webp", category: '' },
+                    { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/sion2.webp", category: 'SHiON' },
                     { title: "", title2: "23.05.26 ESP ENTERTAINMENT FUKUOKA", image: "https://raw.githubusercontent.com/v-bis/top/main/nano17.webp", category: 'NANO3' },
                     { title: "", title2: "23.03.18 SANUKI ROCK COLOSSEUM", image: "https://raw.githubusercontent.com/v-bis/top/main/nano15.webp", category: 'NANO3' },
                     { title: "", title2: "23.01.18 SANUKI ROCK COLOSSEUM", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy11.webp", category: 'TOGGY' },
                     { title: "", title2: "23.01.16 NAGOYA BOTTOM LINE", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga4.webp", category: 'HYUGA' },
                     { title: "", title2: "23.01.16 NAGOYA BOTTOM LINE", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy10.webp", category: 'TOGGY' },
-                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS5.webp", category: '' },
+                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS5.webp", category: 'BiS' },
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/neo10.webp", category: 'NEOTREES' },
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga1.webp", category: 'HYUGA' },
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga2.webp", category: 'HYUGA' },
-                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS4.webp", category: '' },
+                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS4.webp", category: 'BiS' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/nano14.webp", category: 'NANO3' },
-                    { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS3.webp", category: '' },
+                    { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS3.webp", category: 'BiS' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/neo9.webp", category: 'NEOTREES' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/nano13.webp", category: 'NANO3' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/ito6.webp", category: 'MUSENSiTEEBU' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/neo8.webp", category: 'NEOTREES' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/neo7.webp", category: 'NEOTREES' },
-                    { title: "", title2: "22.12.04 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS2.webp", category: '' },
+                    { title: "", title2: "22.12.04 SHIBUYA TOWER RECORD CUTUP STUDIO", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS2.webp", category: 'BiS' },
                     { title: "", title2: "22.11.20 KUMAMOTO B.9 V1", image: "https://raw.githubusercontent.com/v-bis/top/main/nano12.webp", category: 'NANO3' },
                     { title: "", title2: "22.11.20 KUMAMOTO B.9 V1", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy7.webp", category: 'TOGGY' },
                     { title: "", title2: "22.11.20 KUMAMOTO B.9 V1", image: "https://raw.githubusercontent.com/v-bis/top/main/ito5.webp", category: 'MUSENSiTEEBU' },
@@ -190,7 +202,7 @@
                     { title: "", title2: "22.11.05 KANAZAWA AZ", image: "https://raw.githubusercontent.com/v-bis/top/main/neo11.webp", category: 'NEOTREES' },
                     { title: "", title2: "22.11.05 KANAZAWA AZ", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy6.webp", category: 'TOGGY' },
                     { title: "", title2: "22.11.05 KANAZAWA AZ", image: "https://raw.githubusercontent.com/v-bis/top/main/neo6.webp", category: 'NEOTREES' },
-                    { title: "", title2: "22.11.04 KYOTO KBS HALL", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS1.webp", category: '' },
+                    { title: "", title2: "22.11.04 KYOTO KBS HALL", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS1.webp", category: 'BiS' },
                     { title: "", title2: "22.10.29 SHINJUKU MARUI MEN", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy19.webp", category: 'TOGGY' },
                     { title: "", title2: "22.10.29 SHINJUKU MARUI MEN", image: "https://raw.githubusercontent.com/v-bis/top/main/nano10.webp", category: 'NANO3' },
                     { title: "", title2: "22.10.29 SHINJUKU MARUI MEN", image: "https://raw.githubusercontent.com/v-bis/top/main/neo12.webp", category: 'NEOTREES' },
@@ -210,7 +222,7 @@
                     { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/nano5.webp", category: 'NANO3' },
                     { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/nano3.webp", category: 'NANO3' },
                     { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/neo2.webp", category: 'NEOTREES' },
-                    { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS6.webp", category: '' },
+                    { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS6.webp", category: 'BiS' },
                     { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/neo3.webp", category: 'NEOTREES' },
                     { title: "", title2: "22.06.19 NAGASAKI DRUM Be-7", image: "https://raw.githubusercontent.com/v-bis/top/main/mon3.webp", category: 'CHANTMONKEE' },
                     { title: "", title2: "22.06.05 OKINAWA OUTPUT", image: "https://raw.githubusercontent.com/v-bis/top/main/ito1.webp", category: 'MUSENSiTEEBU' },

@@ -274,9 +274,9 @@ h1 {
 }
 
 .members .bis {
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(#3f3f3f));
-  background-image: linear-gradient(to right, #000000 0%, #3f3f3f 100%);
-  display: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(45, 255, 73, 0.5)), to(rgba(255, 17, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(45, 255, 73, 0.5) 0%, rgba(0, 162, 255, 0.5) 100%);
+  display:none;
 }
 
 .members .ito {
@@ -307,6 +307,21 @@ h1 {
 .members .hyuga {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 68, 255, 0.5)), to(rgba(0, 43, 255, 0.5)));
   background-image: linear-gradient(to right, rgba(0, 68, 255, 0.5) 0%, rgba(0, 43, 255, 0.5) 100%);
+}
+
+.members .kure {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 230, 0, 0.5)), to(rgba(251, 255, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(255, 230, 0, 0.5) 0%, rgba(251, 255, 0, 0.5) 100%);
+}
+
+.members .shion {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 65, 154, 0.5)), to(rgba(255, 0, 106, 0.5)));
+  background-image: linear-gradient(to right, rgba(255, 65, 154, 0.5) 0%, rgba(255, 0, 106, 0.5) 100%);
+}
+
+.members .mugen {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(80, 80, 80, 0.5)), to(rgba(20, 20, 20, 0.5)));
+  background-image: linear-gradient(to right, rgba(80, 80, 80, 0.5)) 0%, rgba(20, 20, 20, 0.5) 100%);
 }
 
 #instagram {
@@ -345,11 +360,11 @@ h1 {
 
 .menu2-enter-active, .menu2-leave-active {
   -webkit-transition: -webkit-transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  transition: -webkit-transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  transition: transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  transition: transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  -webkit-transition: all 5800ms;
-  transition: all 5800ms;
+  transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 5800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -webkit-transition: all 2800ms;
+  transition: all 2800ms;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
@@ -446,6 +461,60 @@ h1 {
 }
 
 .menu7-enter, .menu7-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(10vh) translateY(0px);
+          transform: translateX(10vh) translateY(0px);
+}
+
+.menu8-enter-active, .menu7-leave-active {
+  -webkit-transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -webkit-transition: all 1900ms;
+  transition: all 1900ms;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.menu8-enter, .menu7-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(10vh) translateY(0px);
+          transform: translateX(10vh) translateY(0px);
+}
+
+.menu9-enter-active, .menu7-leave-active {
+  -webkit-transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -webkit-transition: all 1900ms;
+  transition: all 1900ms;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.menu9-enter, .menu7-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(10vh) translateY(0px);
+          transform: translateX(10vh) translateY(0px);
+}
+
+.menu10-enter-active, .menu7-leave-active {
+  -webkit-transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 2800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -webkit-transition: all 1900ms;
+  transition: all 1900ms;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.menu10-enter, .menu7-leave-to {
   opacity: 0;
   -webkit-transform: translateX(10vh) translateY(0px);
           transform: translateX(10vh) translateY(0px);
