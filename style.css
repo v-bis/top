@@ -274,54 +274,54 @@ h1 {
 }
 
 .members .bis {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(45, 255, 73, 0.5)), to(rgba(255, 17, 0, 0.5)));
-  background-image: linear-gradient(to right, rgba(45, 255, 73, 0.5) 0%, rgba(0, 162, 255, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(45, 255, 73, 0.2)), to(rgba(255, 17, 0, 0.2)));
+  background-image: linear-gradient(to right, rgba(45, 255, 73, 0.2) 0%, rgba(0, 162, 255, 0.2) 100%);
   display:none;
 }
 
 .members .ito {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(166, 109, 236, 0.5)), to(rgba(128, 0, 187, 0.5)));
-  background-image: linear-gradient(to right, rgba(166, 109, 236, 0.5) 0%, rgba(128, 0, 187, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(166, 109, 236, 0.2)), to(rgba(128, 0, 187, 0.2)));
+  background-image: linear-gradient(to right, rgba(166, 109, 236, 0.2) 0%, rgba(128, 0, 187, 0.2) 100%);
 }
 
 .members .chamo {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 198, 251, 0.5)), to(rgba(8, 103, 255, 0.5)));
-  background-image: linear-gradient(to right, rgba(0, 198, 251, 0.5) 0%, rgba(8, 103, 255, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 198, 251, 0.2)), to(rgba(8, 103, 255, 0.2)));
+  background-image: linear-gradient(to right, rgba(0, 198, 251, 0.2) 0%, rgba(8, 103, 255, 0.2) 100%);
 }
 
 .members .neo {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(60, 186, 146, 0.5)), to(rgba(11, 163, 96, 0.5)));
-  background-image: linear-gradient(to right, rgba(60, 186, 146, 0.5) 0%, rgba(11, 163, 96, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(60, 186, 146, 0.2)), to(rgba(11, 163, 96, 0.2)));
+  background-image: linear-gradient(to right, rgba(60, 186, 146, 0.2) 0%, rgba(11, 163, 96, 0.2) 100%);
 }
 
 .members .toggy {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 118, 77, 0.5)), to(rgba(255, 8, 68, 0.5)));
-  background-image: linear-gradient(to right, rgba(255, 118, 77, 0.5) 0%, rgba(255, 8, 68, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 118, 77, 0.2)), to(rgba(255, 8, 68, 0.2)));
+  background-image: linear-gradient(to right, rgba(255, 118, 77, 0.2) 0%, rgba(255, 8, 68, 0.2) 100%);
 }
 
 .members .nano {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 64, 0.5)), to(rgba(255, 102, 0, 0.5)));
-  background-image: linear-gradient(to right, rgba(255, 175, 64, 0.5) 0%, rgba(255, 102, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 64, 0.2)), to(rgba(255, 102, 0, 0.2)));
+  background-image: linear-gradient(to right, rgba(255, 175, 64, 0.2) 0%, rgba(255, 102, 0, 0.2) 100%);
 }
 
 .members .hyuga {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 68, 255, 0.5)), to(rgba(0, 43, 255, 0.5)));
-  background-image: linear-gradient(to right, rgba(0, 68, 255, 0.5) 0%, rgba(0, 43, 255, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 68, 255, 0.2)), to(rgba(0, 43, 255, 0.2)));
+  background-image: linear-gradient(to right, rgba(0, 68, 255, 0.2) 0%, rgba(0, 43, 255, 0.2) 100%);
 }
 
 .members .kure {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 230, 0, 0.5)), to(rgba(251, 255, 0, 0.5)));
-  background-image: linear-gradient(to right, rgba(255, 230, 0, 0.5) 0%, rgba(251, 255, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 230, 0, 0.2)), to(rgba(251, 255, 0, 0.2)));
+  background-image: linear-gradient(to right, rgba(255, 230, 0, 0.2) 0%, rgba(251, 255, 0, 0.2) 100%);
 }
 
 .members .shion {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 65, 154, 0.5)), to(rgba(255, 0, 106, 0.5)));
-  background-image: linear-gradient(to right, rgba(255, 65, 154, 0.5) 0%, rgba(255, 0, 106, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 65, 154, 0.2)), to(rgba(255, 0, 106, 0.2)));
+  background-image: linear-gradient(to right, rgba(255, 65, 154, 0.2) 0%, rgba(255, 0, 106, 0.2) 100%);
 }
 
 .members .mugen {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(80, 80, 80, 0.5)), to(rgba(20, 20, 20, 0.5)));
-  background-image: linear-gradient(to right, rgba(80, 80, 80, 0.5)) 0%, rgba(20, 20, 20, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(80, 80, 80, 0.2)), to(rgba(20, 20, 20, 0.2)));
+  background-image: linear-gradient(to right, rgba(80, 80, 80, 0.2)) 0%, rgba(20, 20, 20, 0.2) 100%);
 }
 
 #instagram {
