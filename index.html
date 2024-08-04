@@ -7,8 +7,8 @@
     <!--Twitter-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@2b2012b" />
-    <meta name="description" content="3期BiS(新生アイドル研究会-Brand-new idol society-)のフォトギャラリーです。このサイトはVue.jsで作られています。)" />
-    <meta property="og:url" content="https://v-bis.com/" />
+    <meta name="description" content="3期BiSのフォトギャラリーです。このサイトはVue.jsで作られています。イトー・ムセンシティ部/トギー/ナノ3/ネオ・トゥリーズ)" />
+    <meta property="og:url" content="https://v-bis.github.io/top/" />
     <meta property="og:title" content="v-BiS" />
     <meta property="og:description" content="Photo Gallery for BiS" />
     <meta property="og:image" content="logo.png" />
@@ -16,9 +16,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="v-BiS" />
     <meta property="og:description" content="Photo Gallery for BiS" />
-    <meta property="og:url" content="https://v-bis.com/" />
+    <meta property="og:url" content="https://v-bis.github.io/top/" />
     <meta property="og:site_name" content="v-BiS" />
-    <meta property="og:image" content="logo.png" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/v-bis/top/main/logo.png" />
     <title>v-BiS</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -38,7 +38,7 @@
             <div class="center_for_pc">
                 <div class="top">
                     <transition appear name="logo">
-                        <a href="https://v-bis.com/"><img src="https://v-bis.com/logo.png"></a>
+                        <a href="https://v-bis.github.io/top/"><img src="https://raw.githubusercontent.com/v-bis/top/main/logo.png"></a>
                     </transition>
                     <div class="header-wrapper">
                         <div class="typing">
@@ -96,7 +96,7 @@
                     <div class="member nano" v-bind:class="{ active: memberFilter === 'NANO3' }"
                         v-on:click="setMember('NANO3')">&#127799; NANO3</div>
                 </transition>
-                <transition appear name="menu7">
+                <!--<transition appear name="menu7">
                     <div class="member hyuga" v-bind:class="{ active: memberFilter === 'HYUGA' }"
                         v-on:click="setMember('HYUGA')">&#x26a1; HYUGA</div>
                 </transition>
@@ -111,7 +111,7 @@
                 <transition appear name="menu10">
                     <div class="member mugen" v-bind:class="{ active: memberFilter === 'MUGEN' }"
                         v-on:click="setMember('MUGEN')">&#x1F408;&#x200D;&#x2B1B; MUGEN</div>
-                </transition>
+                </transition>-->
             </div>
         </div>
         <transition-group class="projects" name="projects">
@@ -147,7 +147,7 @@
             data: {
                 memberFilter: 'BiS',//初期表示
                 projects: [
-                { title: "", title2: "23.09.18 HMV&BOOKS HAKATA", image: "https://raw.githubusercontent.com/v-bis/top/main/shion15.webp", category: 'SHiON' },
+                /*{ title: "", title2: "23.09.18 HMV&BOOKS HAKATA", image: "https://raw.githubusercontent.com/v-bis/top/main/shion15.webp", category: 'SHiON' },
                 { title: "", title2: "23.09.18 HMV&BOOKS HAKATA", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy26.webp", category: 'TOGGY' },
                 { title: "", title2: "23.09.18 HMV&BOOKS HAKATA", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy25.webp", category: 'TOGGY' },
                 { title: "", title2: "23.09.17 FUKUOKA DRUM Be-1", image: "https://raw.githubusercontent.com/v-bis/top/main/mugen2.webp", category: 'MUGEN' }, 
@@ -191,11 +191,9 @@
                     { title: "", title2: "23.03.18 SANUKI ROCK COLOSSEUM", image: "https://raw.githubusercontent.com/v-bis/top/main/nano15.webp", category: 'NANO3' },
                     { title: "", title2: "23.01.18 SANUKI ROCK COLOSSEUM", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy11.webp", category: 'TOGGY' },
                     { title: "", title2: "23.01.16 NAGOYA BOTTOM LINE", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga4.webp", category: 'HYUGA' },
-                    { title: "", title2: "23.01.16 NAGOYA BOTTOM LINE", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy10.webp", category: 'TOGGY' },
+                    { title: "", title2: "23.01.16 NAGOYA BOTTOM LINE", image: "https://raw.githubusercontent.com/v-bis/top/main/toggy10.webp", category: 'TOGGY' },*/
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS5.webp", category: 'BiS' },
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/neo10.webp", category: 'NEOTREES' },
-                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga1.webp", category: 'HYUGA' },
-                    { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/hyuga2.webp", category: 'HYUGA' },
                     { title: "", title2: "23.01.08 日比谷野外音楽堂", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS4.webp", category: 'BiS' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/nano14.webp", category: 'NANO3' },
                     { title: "", title2: "22.12.17 OSAKA BIG CAT", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS3.webp", category: 'BiS' },
