@@ -247,6 +247,11 @@
                     { title: "", title2: "21.07.17 KANAZAWA AZ", image: "https://raw.githubusercontent.com/v-bis/top/main/BiS8.webp", category: 'BiS' },
                 ]
             },
+            computed: {
+        reversedProjects() {
+            return this.projects.slice().reverse();
+        }
+    },
             methods: {
                 setMember: function (member) {
                     this.memberFilter = member;
