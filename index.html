@@ -116,7 +116,7 @@
         </div>
         <transition-group class="projects" name="projects">
             <div class="project" v-if="memberFilter === project.category || memberFilter === 'BiS'"
-                v-bind:key="project.title" v-for="project in projects">
+                v-bind:key="project.title" v-for="project in reversedProjects">
                 <div class="project-image-wrapper">
                     <img class="project-image" v-bind:src="project.image">
                     <div class="gradient-overlay"></div>
